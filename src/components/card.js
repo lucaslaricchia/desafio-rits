@@ -10,6 +10,8 @@ export default function Card({ props }) {
     <div className="card-container">
       <div className="image">
         <img src={cardImage} alt="Card" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+        <div className="overlay"></div>
       </div>
       <div className="text">
         <p>{descriptionText}</p>
