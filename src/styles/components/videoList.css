@@ -1,0 +1,42 @@
+.videolist-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.videolist-container .video-div{
+    background-color: white;
+    width: 770px;
+    height: 481px;
+}
+
+.videolist-container .list-div{
+    width: 310px;
+    height: 439px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.videolist-container .arrow{
+    width: 30px;
+    height: 40px;
+    stroke-width: 1px;
+    color: #FFFF;
+}
+.scroll {
+    width: 310px;
+    height: 439px;
+    overflow-y: scroll;
+    direction: rtl;
+    
+ }
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 10px;
+}

@@ -56,10 +56,22 @@
     font: 400 18px  'Mulish', sans-serif;
 }
 
-.card-container .text hr{
-    border-color: #e0e0e077;
+.card-container .text .line{
+    position: relative;
+    width: 100%;
+    height: 1px;
     margin-top: 40px;
+    background: #E0E0E0;
     
+}
+
+.card-container .text .line-yellow{
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    background: #A7BD25;
+    transition: width 0.3s
 }
 
 .card-container .text h1{
@@ -76,11 +88,13 @@
 .card-container:hover .image p{
     color: #A7BD25;
 }
-.card-container:hover .text hr{
-    color: #A7BD25;
-}
+
 .card-container:hover .text h1{
     color: #A7BD25;
+}
+
+.card-container:hover .text .line-yellow{
+    width: 100%;
 }
 
 .card-container:hover{

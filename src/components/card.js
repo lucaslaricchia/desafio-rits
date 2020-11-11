@@ -15,7 +15,9 @@ export default function Card({ props }) {
       </div>
       <div className="text">
         <p>{descriptionText}</p>
-        <hr></hr>
+        <div className="line">
+          <div className="line-yellow"></div>
+        </div>
         <h1>CATEGORIA</h1>
       </div>
     </div>
