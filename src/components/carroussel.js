@@ -8,7 +8,11 @@ import Hero2 from "../assets/Imagens/hero2.jpg";
 import Hero3 from "../assets/Imagens/hero3.jpg";
 
 export default function Carroussel() {
-  const [images] = useState([Hero1, Hero2, Hero3]);
+  const [images] = useState([
+    <img src={Hero1} alt="hero1" />,
+    <img src={Hero2} alt="hero2" />,
+    <img src={Hero3} alt="hero3" />,
+  ]);
   const [index, setIndex] = useState(0);
   const [scrollAnimation, setScrollAnimation] = useState("scroll");
 
@@ -36,7 +40,7 @@ export default function Carroussel() {
           }}
           classNames={scrollAnimation}
         >
-          <img src={images[index]} alt="hero" />
+          {images[index]}
         </CSSTransition>
       </SwitchTransition>
       <div className="buttons">

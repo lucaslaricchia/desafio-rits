@@ -9,7 +9,7 @@ import { FiChevronDown } from "react-icons/fi";
 import "../styles/components/accordion.css";
 const Accordion = withStyles({
   root: {
-    boxShadow: '0px 0px 30px 0px rgba(0, 0, 0, 0.1)',
+    boxShadow: "0px 0px 30px 0px rgba(0, 0, 0, 0.1)",
     "&:first-child": {
       borderRadius: "5px 5px 0 0",
     },
@@ -19,17 +19,14 @@ const Accordion = withStyles({
     "&:not(:last-child)": {
       borderBottom: 0,
     },
-    "&:before": {
-    },
+    "&:before": {},
     "&$expanded": {
-        display: 'flex',
-        flexDirection: 'column',
-        margin: '0',
+      display: "flex",
+      flexDirection: "column",
+      margin: "0",
     },
   },
-  expanded: {
-    
-  },
+  expanded: {},
 })(MuiAccordion);
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     font: "800 18px Mulish, sans-serif",
   },
   content: {
-    width: '90%',
+    width: "90%",
     font: "400 18px Mulish, sans-serif",
   },
 }));
@@ -51,17 +48,14 @@ const AccordionSummary = withStyles({
     "&$expanded": {
       minHeight: 56,
       background: "#F7F7F7",
+      "&:first-child": {
+        borderRadius: "5px",
+      },
     },
   },
   expanded: {
-    "&:last-child": {
-      borderRadius: "0 0 5px 5px",
-    },
-    "&:not(:last-child)": {
-      borderBottom: 0,
-    },
     paddingLeft: "20px",
-    paddingRight: '30px',
+    paddingRight: "30px",
     paddingBottom: "0px",
     borderBottom: "none",
     color: "#4EEF61",
@@ -70,8 +64,11 @@ const AccordionSummary = withStyles({
 
 const AccordionDetails = withStyles((theme) => ({
   root: {
-    padding: '0px 30px 30px 40px',
+    padding: "0px 30px 30px 40px",
     background: "#F7F7F7",
+    "&:last-child": {
+      borderRadius: "10px",
+    },
   },
 }))(MuiAccordionDetails);
 
