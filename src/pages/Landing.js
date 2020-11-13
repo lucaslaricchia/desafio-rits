@@ -12,7 +12,7 @@ import logoYoutube from "../assets/Imagens/logo-youtube.png";
 import Card from "../components/card";
 import VideoList from "../components/videoList";
 import Carroussel from "../components/carroussel";
-
+import ItemList from "../components/itemList";
 import "../styles/pages/landing.css";
 
 export default function Landing() {
@@ -63,12 +63,14 @@ export default function Landing() {
       <div className="segunda-div">
         <div className="content-wrapper">
           <h1>Trilhas de conhecimento</h1>
-          <div className="videos"><VideoList/></div>
+          <div className="videos">
+            <VideoList />
+          </div>
         </div>
       </div>
       <div className="terceira-div">
         <div className="content-wrapper">
-          <h1>Como funciona?</h1>
+          <ItemList />
         </div>
       </div>
       <div className="quarta-div">

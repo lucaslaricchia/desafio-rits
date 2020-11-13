@@ -12,8 +12,8 @@ import bigPlayButton from "../assets/Imagens/Grupo 13601.png";
 
 import "../styles/components/videoList.css";
 export default function VideoList() {
-  const [images, setImages] = useState([image1, image2, image3]);
-  const [images2x, setImages2x] = useState([image2x1, image2x2, image2x3]);
+  const [images] = useState([image1, image2, image3]);
+  const [images2x] = useState([image2x1, image2x2, image2x3]);
   const [videoSelected, setSelected] = useState(0);
 
   function handleTopClick() {
@@ -32,7 +32,11 @@ export default function VideoList() {
     <div className="videolist-container">
       <div className="video-div">
         <div className="video">
-        <img src={images2x[videoSelected]} alt="Logo Instagram" className="videoImage"/>
+          <img
+            src={images2x[videoSelected]}
+            alt="Logo Instagram"
+            className="videoImage"
+          />
           <div className="overlay" />
           <img src={bigPlayButton} className="playbutton" alt="playbutton" />
         </div>

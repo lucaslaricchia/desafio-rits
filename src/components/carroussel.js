@@ -7,7 +7,7 @@ import Hero2 from "../assets/Imagens/hero2.jpg";
 import Hero3 from "../assets/Imagens/hero3.jpg";
 
 export default function Carroussel() {
-  const [images, setImages] = useState([Hero1, Hero2, Hero3]);
+  const [images] = useState([Hero1, Hero2, Hero3]);
   const [index, setIndex] = useState(0);
 
   function right() {
