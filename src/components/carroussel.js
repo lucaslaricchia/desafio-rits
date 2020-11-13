@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import "../styles/components/carroussel.css";
 
@@ -9,24 +10,35 @@ import Hero3 from "../assets/Imagens/hero3.jpg";
 export default function Carroussel() {
   const [images] = useState([Hero1, Hero2, Hero3]);
   const [index, setIndex] = useState(0);
+  const [scrollAnimation, setScrollAnimation] = useState("scroll");
 
   function right() {
     if (index < 2) {
-      setIndex(index + 1);
+      setScrollAnimation("scroll");
+      setTimeout(() => setIndex(index + 1), 50);
     }
   }
 
   function left() {
     if (index > 0) {
-      setIndex(index - 1);
+      setScrollAnimation("scrollreverso");
+      setTimeout(() => setIndex(index - 1), 50);
     }
   }
 
   return (
-    <div
-      className="carroussel-container"
-      style={{ backgroundImage: `url(${images[index]})` }}
-    >
+    <div className="carroussel-container">
+      <SwitchTransition mode={"in-out"}>
+        <CSSTransition
+          key={index}
+          addEndListener={(node, done) => {
+            node.addEventListener("transitionend", done, false);
+          }}
+          classNames={scrollAnimation}
+        >
+          <img src={images[index]} alt="hero" />
+        </CSSTransition>
+      </SwitchTransition>
       <div className="buttons">
         <FiChevronLeft onClick={() => left()} className="arrow" />
         <FiChevronRight onClick={() => right()} className="arrow" />

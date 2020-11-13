@@ -3,6 +3,7 @@
     height: 288px;
     display: flex;
 
+    cursor:pointer;
 }
 
 .greencard-container .green-div{

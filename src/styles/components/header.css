@@ -1,0 +1,23 @@
+#landing-page .primeira-div header {
+    width: 100%;
+    max-width: 1170px;
+  
+    position: absolute;
+    top: 0;
+    margin-top: 24px;
+    padding-bottom: 20px;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  #landing-page .primeira-div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }

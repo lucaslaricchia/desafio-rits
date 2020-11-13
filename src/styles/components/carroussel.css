@@ -1,15 +1,63 @@
 .carroussel-container {
-  width: 100%;
-  height: 100%;
-
   display: flex;
   flex-direction: column;
-
-  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 1s;
+  justify-content: center;
+}
+
+.carroussel-container .scroll-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.carroussel-container .scroll-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.carroussel-container .scroll-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.carroussel-container .scroll-exit-active {
+  opacity: 1;
+  transform: translateX(-100%);
+}
+.carroussel-container .scroll-enter-active,
+.carroussel-container .scroll-exit-active {
+  transition: opacity 200ms, transform 200ms;
+}
+
+
+.carroussel-container .scrollreverso-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.carroussel-container .scrollreverso-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.carroussel-container .scrollreverso-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.carroussel-container .scrollreverso-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.carroussel-container .scrollreverso-enter-active,
+.carroussel-container.scrollreverso-exit-active {
+  transition: opacity 200ms, transform 200ms;
+}
+
+.carroussel-container img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
 }
 
 .carroussel-container .buttons {
@@ -20,7 +68,7 @@
   justify-content: space-between;
 }
 .carroussel-container .buttons .arrow {
-  height: 100px;
+  height: 100%;
   width: 100px;
   stroke-width: 0.4px;
 

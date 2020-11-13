@@ -11,10 +11,26 @@ export default function ItemList() {
   const [selected, setSelected] = useState(1);
   const [scrollAnimation, setScrollAnimation] = useState("scroll");
   const items = [
-    [<GreenCard />, <GreenCard />, <GreenCard />],
-    [<GreenCard />, <GreenCard />, <GreenCard />],
-    [<GreenCard />, <GreenCard />, <GreenCard />],
-    [<GreenCard />, <GreenCard />, <GreenCard />],
+    [
+      <GreenCard number={1} text={"Lorem ipsum dolor sit amet, consectetur"} />,
+      <GreenCard number={2} text={"Excepteur sint occaecat cupidatat non"} />,
+      <GreenCard number={3} text={"Culpa qui officia deserunt mollit anim id est"} />,
+    ],
+    [
+      <GreenCard number={4} text={"Sed ut perspiciatis unde omnis iste"} />,
+      <GreenCard number={5} text={"Ut enim ad minima veniam, quis nostrum"} />,
+      <GreenCard number={6} text={"At vero eos et accusamus et iusto odo"} />,
+    ],
+    [
+      <GreenCard number={7} text={"Et harum quidem rerum facilis est et"} />,
+      <GreenCard number={8} text={"Lorem ipsum dolor sit amet, consectetur"} />,
+      <GreenCard number={9} text={"Nam libero tempore, cum soluta nobis"} />,
+    ],
+    [
+      <GreenCard number={10} text={"ed quia non numquam eius modi tempora"} />,
+      <GreenCard number={11} text={"Lorem ipsum dolor sit amet, consectetur"} />,
+      <GreenCard number={12} text={"Ut enim ad minima veniam, quis nostrum"} />,
+    ],
   ];
 
   function increment() {
@@ -26,7 +42,7 @@ export default function ItemList() {
   function decrement() {
     if (selected > 1) {
       setScrollAnimation("scrollreverso");
-      setTimeout(() => setSelected(selected -1), 50);
+      setTimeout(() => setSelected(selected - 1), 50);
     }
   }
 
@@ -64,8 +80,9 @@ export default function ItemList() {
         </CSSTransition>
       </SwitchTransition>
 
-      <div
+      <a
         className="link-button"
+        href="/"
         onMouseOver={() => setButtonText("VER REGULAMENTO")}
         onMouseLeave={() => setButtonText("LINK")}
       >
@@ -80,7 +97,7 @@ export default function ItemList() {
             <div>{buttonText}</div>
           </CSSTransition>
         </SwitchTransition>
-      </div>
+      </a>
       <div className="dots">
         {itemList.map((item) => {
           return (
