@@ -27,7 +27,7 @@
 }
 .carroussel-container .scroll-enter-active,
 .carroussel-container .scroll-exit-active {
-  transition: opacity 200ms, transform 200ms;
+  transition: opacity 500ms, transform 500ms;
 }
 
 
@@ -49,7 +49,7 @@
 }
 .carroussel-container .scrollreverso-enter-active,
 .carroussel-container.scrollreverso-exit-active {
-  transition: opacity 200ms, transform 200ms;
+  transition: opacity 500ms, transform 500ms;
 }
 
 .carroussel-container img {

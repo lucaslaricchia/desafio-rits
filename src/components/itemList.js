@@ -82,7 +82,7 @@ export default function ItemList() {
 
       <a
         className="link-button"
-        href="/"
+        href="/desafio-rits/"
         onMouseOver={() => setButtonText("VER REGULAMENTO")}
         onMouseLeave={() => setButtonText("LINK")}
       >

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+
 import "../styles/components/carroussel.css";
 
 import Hero1 from "../assets/Imagens/visiomed.png";
@@ -13,20 +14,21 @@ export default function Carroussel() {
     <img src={Hero2} alt="hero2" />,
     <img src={Hero3} alt="hero3" />,
   ]);
+  
   const [index, setIndex] = useState(0);
   const [scrollAnimation, setScrollAnimation] = useState("scroll");
 
   function right() {
     if (index < 2) {
       setScrollAnimation("scroll");
-      setTimeout(() => setIndex(index + 1), 50);
+      setTimeout(() => setIndex(index + 1), 500);
     }
   }
 
   function left() {
     if (index > 0) {
       setScrollAnimation("scrollreverso");
-      setTimeout(() => setIndex(index - 1), 50);
+      setTimeout(() => setIndex(index - 1), 500);
     }
   }
 

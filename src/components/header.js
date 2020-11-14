@@ -9,13 +9,13 @@ export default function Header(){
         <nav>
           <ul>
             <li>
-              <a href="/">Menu 1</a>
+              <a href="/desafio-rits/">Menu 1</a>
             </li>
             <li>
-              <a href="/">Menu 2</a>
+              <a href="/desafio-rits/">Menu 2</a>
             </li>
             <li>
-              <a href="/">Menu 3</a>
+              <a href="/desafio-rits/">Menu 3</a>
             </li>
           </ul>
         </nav>

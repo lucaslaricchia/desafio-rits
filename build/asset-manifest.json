@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/desafio-rits/static/css/main.3a00103b.chunk.css",
-    "main.js": "/desafio-rits/static/js/main.1694c609.chunk.js",
-    "main.js.map": "/desafio-rits/static/js/main.1694c609.chunk.js.map",
+    "main.css": "/desafio-rits/static/css/main.ba05df7a.chunk.css",
+    "main.js": "/desafio-rits/static/js/main.7325e819.chunk.js",
+    "main.js.map": "/desafio-rits/static/js/main.7325e819.chunk.js.map",
     "runtime-main.js": "/desafio-rits/static/js/runtime-main.d5297b83.js",
     "runtime-main.js.map": "/desafio-rits/static/js/runtime-main.d5297b83.js.map",
     "static/js/2.8cca37e8.chunk.js": "/desafio-rits/static/js/2.8cca37e8.chunk.js",
     "static/js/2.8cca37e8.chunk.js.map": "/desafio-rits/static/js/2.8cca37e8.chunk.js.map",
     "index.html": "/desafio-rits/index.html",
-    "static/css/main.3a00103b.chunk.css.map": "/desafio-rits/static/css/main.3a00103b.chunk.css.map",
+    "static/css/main.ba05df7a.chunk.css.map": "/desafio-rits/static/css/main.ba05df7a.chunk.css.map",
     "static/js/2.8cca37e8.chunk.js.LICENSE.txt": "/desafio-rits/static/js/2.8cca37e8.chunk.js.LICENSE.txt",
     "static/media/Video-1.bf6e3ef3.png": "/desafio-rits/static/media/Video-1.bf6e3ef3.png",
     "static/media/carla.dbe8fd0a.jpg": "/desafio-rits/static/media/carla.dbe8fd0a.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.d5297b83.js",
     "static/js/2.8cca37e8.chunk.js",
-    "static/css/main.3a00103b.chunk.css",
-    "static/js/main.1694c609.chunk.js"
+    "static/css/main.ba05df7a.chunk.css",
+    "static/js/main.7325e819.chunk.js"
   ]
 }
