@@ -1,7 +1,7 @@
 #landing-page {
   width: 100%;
   height: 3472px;
-  
+
   background: none;
 }
 
@@ -21,8 +21,6 @@
   align-items: center;
   position: relative;
 }
-
-
 
 #landing-page .primeira-div .content-wrapper {
   max-width: 1170px;
@@ -141,12 +139,12 @@ footer .content-wrapper .footer-top-section {
   align-items: center;
 }
 
-footer .content-wrapper .social-icons{
-    width: 237px;
+footer .content-wrapper .social-icons {
+  width: 237px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer .content-wrapper .copyright {

@@ -33,11 +33,10 @@
   position: relative;
 
   overflow: hidden;
-
 }
 
-.videolist-container .video-div .video .videoImage{
-    width: 100%;
+.videolist-container .video-div .video .videoImage {
+  width: 100%;
 }
 
 .videolist-container .video-div .video .overlay {
@@ -52,10 +51,10 @@
     rgba(0, 0, 0, 0.3)
   );
 }
-.videolist-container .video-div .video .playbutton{
-    position: absolute;
-    top: 35%;
-    z-index: 2;
+.videolist-container .video-div .video .playbutton {
+  position: absolute;
+  top: 35%;
+  z-index: 2;
 }
 
 .videolist-container .list-div {
@@ -138,7 +137,6 @@
 
   box-shadow: 0 0 0 4px white;
   position: relative;
-  
 }
 
 .videolist-container .scroll .thumb .thumb-base img {

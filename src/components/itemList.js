@@ -14,7 +14,10 @@ export default function ItemList() {
     [
       <GreenCard number={1} text={"Lorem ipsum dolor sit amet, consectetur"} />,
       <GreenCard number={2} text={"Excepteur sint occaecat cupidatat non"} />,
-      <GreenCard number={3} text={"Culpa qui officia deserunt mollit anim id est"} />,
+      <GreenCard
+        number={3}
+        text={"Culpa qui officia deserunt mollit anim id est"}
+      />,
     ],
     [
       <GreenCard number={4} text={"Sed ut perspiciatis unde omnis iste"} />,
@@ -28,7 +31,10 @@ export default function ItemList() {
     ],
     [
       <GreenCard number={10} text={"ed quia non numquam eius modi tempora"} />,
-      <GreenCard number={11} text={"Lorem ipsum dolor sit amet, consectetur"} />,
+      <GreenCard
+        number={11}
+        text={"Lorem ipsum dolor sit amet, consectetur"}
+      />,
       <GreenCard number={12} text={"Ut enim ad minima veniam, quis nostrum"} />,
     ],
   ];

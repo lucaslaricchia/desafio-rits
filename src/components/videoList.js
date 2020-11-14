@@ -22,12 +22,12 @@ export default function VideoList() {
     "Beatriz",
   ]);
   const links = [
-    'https://youtu.be/uMcKNRj2u6U',
-    'https://youtu.be/FHH6hIc2GyE',
-    'https://youtu.be/6dGJPYYZ1K4',
-    'https://youtu.be/EaICfnmbtes',
-    'https://youtu.be/WmSvHY7u4WI'
-  ]
+    "https://youtu.be/uMcKNRj2u6U",
+    "https://youtu.be/FHH6hIc2GyE",
+    "https://youtu.be/6dGJPYYZ1K4",
+    "https://youtu.be/EaICfnmbtes",
+    "https://youtu.be/WmSvHY7u4WI",
+  ];
 
   const [videoSelected, setSelected] = useState(0);
 
@@ -47,9 +47,14 @@ export default function VideoList() {
 
   return (
     <div className="videolist-container">
-      <div className="video-div" onClick={()=>setPlay(true)}>
+      <div className="video-div" onClick={() => setPlay(true)}>
         {play ? (
-          <ReactPlayer playing={true} width='770px' height='439px' url={links[videoSelected]}/>
+          <ReactPlayer
+            playing={true}
+            width="770px"
+            height="439px"
+            url={links[videoSelected]}
+          />
         ) : (
           <div className="video">
             <img
@@ -78,10 +83,13 @@ export default function VideoList() {
         <div className="scroll">
           {images.map((item, index) => {
             return (
-              <div className="thumb" onClick={() => {
-                setPlay(false)
-                setSelected(index)
-                }}>
+              <div
+                className="thumb"
+                onClick={() => {
+                  setPlay(false);
+                  setSelected(index);
+                }}
+              >
                 <div
                   className="thumb-base"
                   style={{

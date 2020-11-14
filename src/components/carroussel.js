@@ -14,7 +14,7 @@ export default function Carroussel() {
     <img src={Hero2} alt="hero2" />,
     <img src={Hero3} alt="hero3" />,
   ]);
-  
+
   const [index, setIndex] = useState(0);
   const [scrollAnimation, setScrollAnimation] = useState("scroll");
 

@@ -27,7 +27,6 @@
   user-select: none;
 }
 
-
 .scroll-enter {
   opacity: 0;
   transform: translateX(100%);
@@ -49,7 +48,6 @@
   transition: opacity 500ms, transform 500ms;
 }
 
-
 .scrollreverso-enter {
   opacity: 0;
   transform: translateX(-100%);
@@ -70,7 +68,6 @@
 .scrollreverso-exit-active {
   transition: opacity 500ms, transform 500ms;
 }
-
 
 .itemlist-wrapper .link-button {
   margin-top: 60px;
