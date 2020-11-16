@@ -69,12 +69,9 @@ export default function Landing() {
           <Grid item xs={12}>
             <h1>Trilhas de conhecimento</h1>
           </Grid>
-
-          <Grid item xs={12}>
-            <div className="videos">
+            <Grid item className="videos">
               <VideoList />
-            </div>
-          </Grid>
+            </Grid>
         </Grid>
       </Grid>
       <Grid container className="terceira-div">

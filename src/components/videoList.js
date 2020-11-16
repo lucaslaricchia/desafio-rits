@@ -52,7 +52,7 @@ export default function VideoList() {
         {play ? (
           <ReactPlayer
             playing={true}
-            width="770px"
+            width="100%"
             height="439px"
             url={links[videoSelected]}
           />
@@ -68,9 +68,8 @@ export default function VideoList() {
           </div>
         )}
         <p>{description[videoSelected]}</p>
-        
       </Grid>
-      <Grid item xs={12} md={3} className="list-div">
+      <Grid item xs={3} className="list-div">
         <div
           className="arrow-up"
           style={{
