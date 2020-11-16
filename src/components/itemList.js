@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import GreenCard from "./greencard";
+import { Grid } from "@material-ui/core";
 
 import "../styles/components/itemList.css";
 
@@ -53,23 +54,30 @@ export default function ItemList() {
   }
 
   return (
-    <div className="itemlist-wrapper">
-      <h1>Como funciona?</h1>
-      <div className="buttons-div">
+    <Grid container className="itemlist-wrapper">
+      <Grid
+        item
+        xs={12}
+        md={10}
+        style={{textAlign: "center", marginTop:'80px', marginBottom: '20px' }}
+      >
+        <h1>Como funciona?</h1>
+      </Grid>
+
+      <Grid item xs={5} md={2} className="buttons-div">
         <div
           className={`${selected === 1 ? "button button-inactive" : "button"}`}
           onClick={decrement}
         >
-          <FiChevronLeft size={55} strokeWidth={"1px"} />
+          <FiChevronLeft size={70} strokeWidth={"1px"} />
         </div>
         <div
           className={`${selected === 4 ? "button button-inactive" : "button"}`}
           onClick={increment}
         >
-          <FiChevronRight size={55} strokeWidth={"1px"} />
+          <FiChevronRight size={70} strokeWidth={"1px"} />
         </div>
-      </div>
-
+      </Grid>
       <SwitchTransition mode={"out-in"}>
         <CSSTransition
           key={selected}
@@ -78,42 +86,62 @@ export default function ItemList() {
           }}
           classNames={scrollAnimation}
         >
-          <div className="item-list">
+          <Grid
+            container
+            spacing={3}
+          >
             {items[selected - 1].map((item) => {
-              return item;
+              return (
+                <Grid item xs={12} md={4}style={{ display: 'flex', justifyContent: "center", alignItems: "center" }}>
+                  {item}
+                </Grid>
+              );
             })}
-          </div>
+          </Grid>
         </CSSTransition>
       </SwitchTransition>
 
-      <a
-        className="link-button"
-        href="/desafio-rits/"
-        onMouseOver={() => setButtonText("VER REGULAMENTO")}
-        onMouseLeave={() => setButtonText("LINK")}
+      <Grid
+        container
+        style={{ display: 'flex', alignItems: "center", justifyContent: "center", marginBottom: '100px'}}
       >
-        <SwitchTransition mode="out-in">
-          <CSSTransition
-            classNames="fade"
-            addEndListener={(node, done) => {
-              node.addEventListener("transitionend", done, false);
-            }}
-            key={buttonText}
+        <Grid item xs={12} md={4}>
+          <a
+            className="link-button"
+            href="/desafio-rits/"
+            onMouseOver={() => setButtonText("VER REGULAMENTO")}
+            onMouseLeave={() => setButtonText("LINK")}
           >
-            <div>{buttonText}</div>
-          </CSSTransition>
-        </SwitchTransition>
-      </a>
-      <div className="dots">
-        {itemList.map((item) => {
-          return (
-            <div
-              key={item}
-              className={`${item === selected ? "dot dot-active" : "dot"}`}
-            />
-          );
-        })}
-      </div>
-    </div>
+            <SwitchTransition mode="out-in">
+              <CSSTransition
+                classNames="fade"
+                addEndListener={(node, done) => {
+                  node.addEventListener("transitionend", done, false);
+                }}
+                key={buttonText}
+              >
+                <div>{buttonText}</div>
+              </CSSTransition>
+            </SwitchTransition>
+          </a>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          md={5}
+          className="dots"
+          style={{alignItems: "center", justifyContent: "flex-end" }}
+        >
+          {itemList.map((item) => {
+            return (
+              <div
+                key={item}
+                className={`${item === selected ? "dot dot-active" : "dot"}`}
+              />
+            );
+          })}
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/desafio-rits/static/css/main.dd174502.chunk.css",
-    "main.js": "/desafio-rits/static/js/main.36e47d21.chunk.js",
-    "main.js.map": "/desafio-rits/static/js/main.36e47d21.chunk.js.map",
+    "main.css": "/desafio-rits/static/css/main.4f11c2e0.chunk.css",
+    "main.js": "/desafio-rits/static/js/main.2a78c023.chunk.js",
+    "main.js.map": "/desafio-rits/static/js/main.2a78c023.chunk.js.map",
     "runtime-main.js": "/desafio-rits/static/js/runtime-main.d5297b83.js",
     "runtime-main.js.map": "/desafio-rits/static/js/runtime-main.d5297b83.js.map",
-    "static/js/2.8cca37e8.chunk.js": "/desafio-rits/static/js/2.8cca37e8.chunk.js",
-    "static/js/2.8cca37e8.chunk.js.map": "/desafio-rits/static/js/2.8cca37e8.chunk.js.map",
+    "static/js/2.e9d2599a.chunk.js": "/desafio-rits/static/js/2.e9d2599a.chunk.js",
+    "static/js/2.e9d2599a.chunk.js.map": "/desafio-rits/static/js/2.e9d2599a.chunk.js.map",
     "index.html": "/desafio-rits/index.html",
-    "static/css/main.dd174502.chunk.css.map": "/desafio-rits/static/css/main.dd174502.chunk.css.map",
-    "static/js/2.8cca37e8.chunk.js.LICENSE.txt": "/desafio-rits/static/js/2.8cca37e8.chunk.js.LICENSE.txt",
+    "static/css/main.4f11c2e0.chunk.css.map": "/desafio-rits/static/css/main.4f11c2e0.chunk.css.map",
+    "static/js/2.e9d2599a.chunk.js.LICENSE.txt": "/desafio-rits/static/js/2.e9d2599a.chunk.js.LICENSE.txt",
     "static/media/Video-1.bf6e3ef3.png": "/desafio-rits/static/media/Video-1.bf6e3ef3.png",
     "static/media/carla.dbe8fd0a.jpg": "/desafio-rits/static/media/carla.dbe8fd0a.jpg",
     "static/media/gato.a3b7a12c.jpg": "/desafio-rits/static/media/gato.a3b7a12c.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d5297b83.js",
-    "static/js/2.8cca37e8.chunk.js",
-    "static/css/main.dd174502.chunk.css",
-    "static/js/main.36e47d21.chunk.js"
+    "static/js/2.e9d2599a.chunk.js",
+    "static/css/main.4f11c2e0.chunk.css",
+    "static/js/main.2a78c023.chunk.js"
   ]
 }

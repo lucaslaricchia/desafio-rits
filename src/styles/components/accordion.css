@@ -1,6 +1,4 @@
 .accordion-wrapper {
-  width: 770px;
-  height: 434px;
-
+  height: 100%;
   overflow-y: none;
 }

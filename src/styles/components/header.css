@@ -1,4 +1,4 @@
-#landing-page .primeira-div header {
+header {
   width: 100%;
   max-width: 1170px;
 
@@ -14,10 +14,16 @@
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
-
-#landing-page .primeira-div ul {
+.image-wrapper header ul {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+header a {
+  font: 600 14px "Mulish", sans-serif;
+  margin-left: 60px;
+  color: white;
+  text-decoration: none;
 }

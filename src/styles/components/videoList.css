@@ -1,23 +1,23 @@
 .videolist-container {
-  display: flex;
-  justify-content: space-between;
+  height: 100%;
   align-items: center;
 }
 
 .videolist-container .video-div {
   width: 770px;
-  height: 490px;
   margin-top: 20px;
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  position: relative;
 }
 
 .videolist-container .video-div p {
+  width: 100%;
   margin-top: 18px;
-  margin-left: 30px;
   color: white;
+  text-align: left;
 }
 
 .videolist-container .video-div .video {
@@ -58,8 +58,6 @@
 }
 
 .videolist-container .list-div {
-  width: 350px;
-  height: 530px;
 
   user-select: none;
   display: flex;
@@ -67,6 +65,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  margin-left: 50px;
 }
 
 .videolist-container .arrow-up {

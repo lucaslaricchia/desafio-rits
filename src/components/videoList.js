@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Grid } from "@material-ui/core";
 import { FiChevronUp, FiChevronDown } from "react-icons/fi";
 import ReactPlayer from "react-player/youtube";
 
@@ -46,8 +47,8 @@ export default function VideoList() {
   }
 
   return (
-    <div className="videolist-container">
-      <div className="video-div" onClick={() => setPlay(true)}>
+    <Grid container className="videolist-container">
+      <Grid item xs={8}  className="video-div" onClick={() => setPlay(true)}>
         {play ? (
           <ReactPlayer
             playing={true}
@@ -66,10 +67,10 @@ export default function VideoList() {
             <img src={bigPlayButton} className="playbutton" alt="playbutton" />
           </div>
         )}
-
         <p>{description[videoSelected]}</p>
-      </div>
-      <div className="list-div">
+        
+      </Grid>
+      <Grid item xs={12} md={3} className="list-div">
         <div
           className="arrow-up"
           style={{
@@ -135,7 +136,7 @@ export default function VideoList() {
             className="arrow"
           />
         </div>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 }
